@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class UsedProduct extends Product {
-    protected LocalDate manufacturedDate;
+    private LocalDate manufacturedDate;
 
     public UsedProduct() {
         super();

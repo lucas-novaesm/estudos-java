@@ -1,7 +1,7 @@
 package entities;
 
 public class ImportedProduct extends Product {
-    protected Double customFee;
+    private Double customFee;
 
     public ImportedProduct(){
         super();
@@ -21,7 +21,7 @@ public class ImportedProduct extends Product {
     }
 
     public Double totalPrice(){
-        return price + customFee;
+        return getPrice() + customFee;
     }
 
     @Override
