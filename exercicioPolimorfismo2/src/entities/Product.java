@@ -4,7 +4,7 @@ public class Product {
     private String name;
     private Double price;
 
-
+    //Contructors
     public Product() {
     }
 
@@ -13,6 +13,7 @@ public class Product {
         this.price = price;
     }
 
+    //Getters and Setters
     public String getName() {
         return name;
     }
@@ -29,6 +30,9 @@ public class Product {
         this.price = price;
     }
 
+    //Methods
+    //Portuguese: No método "priceTag" abaixo, retornamos o atributo "name" sem utilizar o "get", pois se trata de um atributo pertencente a esta mesma classe.
+    //English: In the "priceTag" method below, we return the "name" attribute without using "get", as it is an attribute belonging to this same class.
     public String priceTag(){
         return name + " $ " + price;
     }
