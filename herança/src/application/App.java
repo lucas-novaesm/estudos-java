@@ -19,6 +19,6 @@ public class App {
         for(Account acc : list){
             sum += acc.getBalance();
         }
-        System.out.printf("Total balance: %.2f%n", sum);
+        System.out.printf("Total balance: %.2f", sum);
     }
 }
